@@ -18,21 +18,19 @@ p {
 }
 
 .head {
-  background-image: url("images/Education-bro.png");
+  background-image: url("images/head.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 0 auto;
 }
 
 .intro-div {
-    background-color: whitesmoke;
-    opacity: 0.8;
     margin-top: -20px;
     padding-top: 30px;
     padding-bottom: 100px;
 }
 .intro-head {
-    color: red;
+    color: #ec5242;
 }
 .intro-head p{
     font-size: 40px;
@@ -60,6 +58,21 @@ p {
 
 .main-program-div {
     text-align: center;
+    color: white;
+    background: url('images/geometric-line-shapes-background-seamless-white-pattern-lines-abstract-figures-memphis-style-vector-104334441.jpg')
+}
+
+.main-program-div h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.line {
+  height: 0.5vh;
+  width: 100px;
+  margin-left: 44%;
+  margin-bottom: 40px;
+  background-color: #ec5242;
 }
 
 .fab{
@@ -78,14 +91,14 @@ p {
 
 .main-program-content::before {    
       content: "";
-      background: black;
+      background: white;
       background-size: cover;
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
-      opacity: 0.5;
+      opacity: 0.2;
 }
 
 .main-program-content p, a {
@@ -97,16 +110,85 @@ p {
 
 .main-program-content h3 {
     position: relative;
-    color: red;
+    color: #ec5242;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 40px;
+    font-weight: 700;
 }
 
 .btn {
     padding: 100px;
-    width: 100px;
+    width: 200px;
     height: 50px;
     color: white;
-    background-color: red;
+    background-color: #ec5242;
+    text-align: center;
 }
+
+.btn p {
+  margin: 0px;
+}
+
+.speakers-content {
+  margin-top: 50px;
+}
+
+.speakers-content h2{
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.speakers-content h3 {
+  text-align: center;
+}
+.speakers-degree {
+  color: #ec5242;
+  font-style: italic;
+}
+.line1 {
+  height: 0.5vh;
+  width: 40px;
+  margin: 20px 0px;
+  background-color: rgb(194, 193, 193);
+}
+.speakers-content img {
+  width: 250px;
+  height: 35vh;
+  margin-right: 10%;
+  margin-left: 10%;
+  border: 2px solid #ec5242;
+}
+
+.speakers-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.btn-mobile {
+  width: 95%;
+  padding: 10px 0;
+  margin: 20px;
+  color: black;
+  text-align: center;
+  border: 2px solid rgb(194, 193, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-mobile p {
+margin: 0px;
+}
+.btn-mobile a {
+  margin: 0;
+  padding: 20px
+}
+.btn-mobile i {
+  color: #ec5242;
+  font-weight: 700;
+  font-size: 20px;
+}
+
