@@ -1,31 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
   font-family: sans-serif;
   background-color: #f7f7f9;
   margin: 0;
+  max-width: 1440px;
 }
 
 ul {
   list-style-type: none;
 }
 
-h2 {
-  font-size: 32px;
-  color: #344563;
-}
-
 p {
-  font-size: 20px;
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
 }
 
 .head {
-  background-image: url("images/head.jpg");
+  background: url('images/abstract-simple-background_53876-99863.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin: 0 auto;
+  margin: 0;
+}
+nav {
+  padding-top: 20px;
+}
+header {
+  margin-left: 12%;
+}
+.menu {
+  margin-top: -20px;
+  margin-left: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+.hamburger{
+  visibility: hidden;
+}
+
+.intro-div {
+  margin-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  width: 80%;
+}
+.intro-head {
+  color: #ec5242;
+}
+.intro-head p {
+  font-size: 30px;
+}
+.intro-head h1 {
+  font-weight: 700;
+  font-size: 50px;
+  width: 70%;
+}
+.intro-mid-border {
+  border: 3px solid white;
+  color: black;
+  padding: 10px;
+  margin-top: 20px;
+  width: 70%;
+}
+.intro-time p {
+  color: black;
+  font-size: 20px;
+  width: 70%;
+}
+.intro-time h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 40px;
+  width: 70%;
+}
+
+.main-program-div {
+  text-align: center;
+  color: white;
+  background: url("images/geometric-line-shapes-background-seamless-white-pattern-lines-abstract-figures-memphis-style-vector-104334441.jpg");
+}
+
+.main-program-div h3 {
+  margin-bottom: 10px;
+  width: 100%;
+}
+.underline-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px ;
+  margin-bottom: 40px;
+}
+.line {
+  height: 0.2vh;
+  width: 50px;
+  background-color: #ec5242;
+}
+
+.fab {
+  color: white;
+  font-size: 40px;
+}
+.main-program-content {
+  display: inline-block;
+  position: relative;
+  width: 15%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.main-program-content::before {
+  content: "";
+  background: white;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+.main-program-content p,
+a {
+  position: relative;
+  color: #ffffff;
+  margin: 10px 0px;
+}
+
+.main-program-content h3 {
+  position: relative;
+  color: #ec5242;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+  font-weight: 700;
+  font-size: 15px;
+}
+.btn{
+  display: none;
+  visibility: hidden;
+}
+.clickLink {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.speakers-content {
+  display: none;
+}
+
+.speakers-content-desktop {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 10px;
+  margin: 0 10%;
+  width: 100%;
+}
+.speakers-content-desktop p {
+  width: 250px;
+  margin: 0px;
+}
+.speakers-content-desktop h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.speakers-content-desktop h3 {
+  text-align: center;
+}
+.speakers-degree {
+  color: #ec5242;
+  font-style: italic;
+}
+.line1 {
+  height: 0.5vh;
+  width: 40px;
+  margin: 5px 0px;
+  background-color: rgb(194, 193, 193);
+}
+.speakers-content-desktop img {
+  width: 100px;
+  height: 10vh;
+  margin-right: 5%;
+  margin-left: 5%;
+  border: 2px solid #ec5242;
+}
+
+.speakers-info-desktop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
-
+  .logo{
+    display: none;
+  }
+  .hamburger {
+    visibility: inherit;
+    position: fixed;
+    z-index: 100;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 94%;
+    text-align: left;
+  }
+  
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: white;
+    opacity: 0.9;
+    list-style: none;
+    padding: 65px;
+    margin: 0;
+    display: block;
+  }
+  
+  .menuItem {
+    color: black;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 20px;
+  }
+  
+  .showMenu {
+    transform: translateY(0);
+  }
+  .intro-div {
+    margin-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    width: 95%;
+  }
+  #myNavbar {
+    margin: 0;
+  }
   .navbar-header{
     float: left;
   }
@@ -34,96 +265,26 @@ p {
   }
   .intro-div {
     margin-top: -20px;
-    padding-top: 30px;
-    padding-bottom: 100px;
   }
   .intro-head {
-    color: #ec5242;
-  }
-  .intro-head p {
-    font-size: 40px;
-  }
-  .intro-head h1 {
-    font-weight: 700;
-    font-size: 60px;
-  }
-  .intro-mid-border {
-    border: 2px solid white;
-    background-image: linear-gradient(white, white);
-    background-color: whitesmoke;
-    color: black;
-    padding: 10px;
-    margin-top: 50px;
-  }
-  .intro-time p {
-    color: black;
-  }
-  .intro-time h2 {
-    color: black;
-    font-weight: 700;
-    font-size: 40px;
-  }
-
-  .main-program-div {
-    text-align: center;
-    color: white;
-    background: url("images/geometric-line-shapes-background-seamless-white-pattern-lines-abstract-figures-memphis-style-vector-104334441.jpg");
-  }
-
-  .main-program-div h3 {
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
-
-  .line {
-    height: 0.5vh;
-    width: 100px;
-    margin-left: 44%;
-    margin-bottom: 40px;
-    background-color: #ec5242;
-  }
-
-  .fab {
-    color: white;
-    font-size: 40px;
+    margin-top: 10%;
   }
   .main-program-content {
     position: relative;
-    width: 100%;
+    width: 90%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    margin-bottom: 20px;
   }
-
-  .main-program-content::before {
-    content: "";
-    background: white;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.2;
+  .main-program-content h3 {
+    width: 70%;
+    margin-right: 40%;
   }
-
   .main-program-content p,
   a {
-    position: relative;
-    color: #ffffff;
     padding: 0 50px;
-    margin: 10px 0px;
-  }
-
-  .main-program-content h3 {
-    position: relative;
-    color: #ec5242;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 40px;
-    font-weight: 700;
+    width: 70%;
   }
 
   .btn {
@@ -133,22 +294,34 @@ p {
     color: white;
     background-color: #ec5242;
     text-align: center;
+    visibility: inherit;
   }
 
   .btn p {
     margin: 0px;
   }
 
-  .speakers-content {
-    margin-top: 50px;
+  .clickLink {
+    display: none;
   }
 
-  .speakers-content h2 {
+  .speakers-content-global {
+    display: none;
+  }
+  .speakers-content {
+    display: block;
+    margin-top: 50px;
+  }
+  .speakers-content-mobile p {
+    width: 350px;
+    margin: 0px;
+  }
+  .speakers-content-mobile h2 {
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 10px;
   }
-  .speakers-content h3 {
+  .speakers-content-mobile h3 {
     text-align: center;
   }
   .speakers-degree {
@@ -156,16 +329,13 @@ p {
     font-style: italic;
   }
   .line1 {
-    height: 0.5vh;
-    width: 40px;
     margin: 20px 0px;
-    background-color: rgb(194, 193, 193);
   }
-  .speakers-content img {
-    width: 250px;
-    height: 35vh;
-    margin-right: 10%;
-    margin-left: 10%;
+  .speakers-content-mobile img {
+    width: 200px;
+    height: 25vh;
+    margin-right: 4%;
+    margin-left: 4%;
     border: 2px solid #ec5242;
   }
 
