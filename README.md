@@ -49,4 +49,4 @@ To get a local copy up and running follow these simple example steps.
 
 ## Acknowledgments
 
-- Thanks to [CindyShin] (https://www.behance.net/adagio07), I have followed his content: [BehanceTemplate] (https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
+- Thanks to [CindyShin](https://www.behance.net/adagio07), I have followed his content: [BehanceTemplate](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
