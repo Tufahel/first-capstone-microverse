@@ -4,7 +4,6 @@ body {
   font-family: sans-serif;
   background-color: #f7f7f9;
   margin: 0;
-  max-width: 1440px;
 }
 
 ul {
@@ -89,7 +88,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px ;
+  margin-top: 40px ;
   margin-bottom: 40px;
 }
 .line {
@@ -200,6 +199,107 @@ a {
   width: 50%;
 }
 
+.sponsored {
+  background-color: #272a31;
+  color: #d3d3d3;
+  padding-bottom: 35px;
+}
+.sponsored i {
+  color :#d3d3d3
+}
+.sponsored h3 {
+  margin-top: 40px;
+}
+.sponsored-icon {
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  height: 15vh;
+  background-color: #d3d3d3;
+}
+.footer p {
+  width: 350px;
+}
+.about-div {
+  margin-left: 10%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  width: 80%;
+  text-align: center;
+}
+
+.about-head {
+  color: #ec5242;
+}
+.about-head h1 {
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.about-mid-border {
+  border: 3px solid white;
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+.about-info {
+  margin-top: 40px;
+}
+.about-email {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.underline-content p {
+  margin-top: 10px;
+  width: 400px;
+  text-align: center;
+}
+.details {
+  border-bottom: 2px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details-img {
+  width: 300px;
+  margin-bottom: 3%;
+}
+.event-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.event-shade {
+  background-color: #ec5242;
+  margin: 10px;
+}
+.event-img {
+  width: 250px;
+  opacity: 0.2;
+}
+.event-date{
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  margin-top: -14%;
+  width: 30%;
+  color: white;
+}
+.event-date h3{
+  font-weight: 700;
+}
+.about-footer {
+  margin-top: 20px ;
+  background-color: #272a31;
+  color: white;
+}
 @media only screen and (max-width: 768px) {
   .logo{
     display: none;
@@ -360,10 +460,12 @@ a {
 
   .btn-mobile p {
     margin: 0px;
+    padding-left: 50px;
   }
   .btn-mobile a {
     margin: 0;
     padding: 20px;
+    width: 20%;
   }
   .btn-mobile i {
     color: #ec5242;
