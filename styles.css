@@ -443,6 +443,10 @@ a {
     margin-top: 10%;
   }
 
+  .intro-time h2 {
+    font-size: 27px;
+  }
+
   .fab {
     font-size: 60px;
   }
@@ -514,7 +518,7 @@ a {
 
   .speakers-content-mobile p {
     font-family: "Lato", sans-serif;
-    width: 250px;
+    width: 150px;
     margin: 0;
   }
 
@@ -539,7 +543,7 @@ a {
   }
 
   .speakers-content-mobile img {
-    width: 200px;
+    width: 150px;
     height: 25vh;
     margin-right: 4%;
     margin-left: 4%;
@@ -547,7 +551,7 @@ a {
   }
 
   .btn-mobile {
-    width: 85%;
+    width: 75%;
     margin-left: 70px;
     color: black;
     text-align: center;
