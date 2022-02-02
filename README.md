@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 - Mobile Version
 
 - First page
-- ![](images/3.png)
+- ![](images/3-update.png)
 
 - Second page
 - ![](images/4.png)
