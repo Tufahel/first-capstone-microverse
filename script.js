@@ -31,31 +31,31 @@ const speakers = [
   {
     name: 'Profile 1',
     img: 'images/profile.png',
-    degree: 'Phd in Phylosophy',
+    degree: 'Phd in Phylosophy from Oxford University',
     description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
   },
   {
     name: 'Profile 2',
     img: 'images/profile.png',
-    degree: 'Phd in English',
+    degree: 'Phd in English from Cambrige University',
     description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
   },
   {
     name: 'Profile 3',
     img: 'images/profile.png',
-    degree: 'Phd in Math',
+    degree: 'Phd in Math from California University',
     description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
   },
   {
     name: 'Profile 4',
     img: 'images/profile.png',
-    degree: 'Phd in CSE',
+    degree: 'Phd in CSE from Harvard University',
     description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
   },
   {
     name: 'Profile 5',
     img: 'images/profile.png',
-    degree: 'Phd in EEE',
+    degree: 'Phd in EEE from Peeking University',
     description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
   },
   {
