@@ -13,7 +13,7 @@ function toggleMenu() {
   } else {
     menu.classList.add('showMenu');
     closeIcon.style.display = 'block';
-    closeIcon.style.color = 'white';
+    closeIcon.style.color = 'gray';
     hamburger.style.background = 'none';
     menuIcon.style.display = 'none';
   }
@@ -28,42 +28,42 @@ menuItems.forEach(
 );
 
 const speakers = [
-    {
-        name: 'Profile 1',
-        img: 'images/profile.png',
-        degree: 'Phd in Phylosophy',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    },
-    {
-        name: 'Profile 2',
-        img: 'images/profile.png',
-        degree: 'Phd in English',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    },
-    {
-        name: 'Profile 3',
-        img: 'images/profile.png',
-        degree: 'Phd in Math',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    },
-    {
-        name: 'Profile 4',
-        img: 'images/profile.png',
-        degree: 'Phd in CSE',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    },
-    {
-        name: 'Profile 5',
-        img: 'images/profile.png',
-        degree: 'Phd in EEE',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    },
-    {
-        name: 'Profile 6',
-        img: 'images/profile.png',
-        degree: 'Phd in Chemistry',
-        description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
-    }
+  {
+    name: 'Profile 1',
+    img: 'images/profile.png',
+    degree: 'Phd in Phylosophy',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
+  {
+    name: 'Profile 2',
+    img: 'images/profile.png',
+    degree: 'Phd in English',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
+  {
+    name: 'Profile 3',
+    img: 'images/profile.png',
+    degree: 'Phd in Math',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
+  {
+    name: 'Profile 4',
+    img: 'images/profile.png',
+    degree: 'Phd in CSE',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
+  {
+    name: 'Profile 5',
+    img: 'images/profile.png',
+    degree: 'Phd in EEE',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
+  {
+    name: 'Profile 6',
+    img: 'images/profile.png',
+    degree: 'Phd in Chemistry',
+    description: ['Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse magnam odit eveniet possimus dignissimos iusto tenetur.'],
+  },
 ];
 
 const Btn = document.getElementsByClassName('btn-mobile');
@@ -72,8 +72,8 @@ const speakerSection = document.createElement('div');
 speakerSection.classList.add('speakers-content');
 
 function speakerSectionMobile(number) {
-    featuredSpeaker.appendChild(speakerSection);
-    speakerSection.innerHTML = `
+  featuredSpeaker.appendChild(speakerSection);
+  speakerSection.innerHTML = `
                 <div class="underline-content">
                 <h3>Featured Speakers</h3>
                  <div class="line"></div>
@@ -104,16 +104,16 @@ function speakerSectionMobile(number) {
                 </div>
                 </div>
 `;
-document.addEventListener('click', () => {
+  document.addEventListener('click', () => {
   });
 }
 
 speakerSectionMobile(0);
 
 function speakerSectionMobileClick(number) {
-    speakerSection.style.display = 'block';
-    featuredSpeaker.appendChild(speakerSection);
-    speakerSection.innerHTML = `
+  speakerSection.style.display = 'block';
+  featuredSpeaker.appendChild(speakerSection);
+  speakerSection.innerHTML = `
                 <div class="underline-content">
                 <h3>Featured Speakers</h3>
                 <div class="line"></div>
@@ -179,15 +179,15 @@ function speakerSectionMobileClick(number) {
 }
 
 Btn[0].addEventListener('click', () => {
-    speakerSectionMobileClick(0);
-})
+  speakerSectionMobileClick(0);
+});
 
 const speakerSectionDesktop = document.createElement('div');
 speakerSectionDesktop.classList.add('speakers-content-global');
 
 function speakerSectionGlobal(number) {
-    featuredSpeaker.appendChild(speakerSectionDesktop);
-    speakerSectionDesktop.innerHTML = `
+  featuredSpeaker.appendChild(speakerSectionDesktop);
+  speakerSectionDesktop.innerHTML = `
                 <div class="underline-content">
                 <h3>Featured Speakers</h3>
                 <div class="line"></div>
