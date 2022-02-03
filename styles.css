@@ -33,7 +33,7 @@ nav {
 }
 
 header {
-  margin-left: 12%;
+  margin-left: 2%;
 }
 
 .menu {
@@ -42,16 +42,11 @@ header {
   display: flex;
   justify-content: space-around;
 }
-
+.logo {
+  margin-left: 35px;
+}
 .hamburger {
   visibility: hidden;
-}
-
-.intro-div {
-  margin-left: 10%;
-  padding-top: 30px;
-  padding-bottom: 100px;
-  width: 80%;
 }
 
 .intro-head {
@@ -63,13 +58,16 @@ header {
   font-size: 30px;
 }
 
+.intro-div {
+  width: 93%;
+}
+
 .intro-head h1 {
   font-family: "Cocogoose", sans-serif;
   font-weight: 700;
   font-size: 50px;
   width: 70%;
 }
-
 .intro-mid-border {
   border: 3px solid white;
   color: black;
@@ -81,27 +79,14 @@ header {
 .intro-time p {
   color: black;
   font-size: 20px;
-  width: 70%;
+  padding-bottom: 5%;
 }
 
 .intro-time h2 {
-  font-family: "COCOGOOSE", sans-serif;
-  color: black;
+  font-family: "COCOGOOSE", "Lato", sans-serif;
   font-weight: 500;
   font-size: 30px;
-  width: 70%;
-}
-
-.main-program-div {
-  text-align: center;
-  color: white;
-  background-color: #272a31;
-}
-
-.main-program-div h3 {
-  font-family: "Lato", sans-serif;
-  margin-bottom: 10px;
-  width: 100%;
+  color: #ec5242;
 }
 
 .underline-content {
@@ -109,8 +94,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -124,18 +109,31 @@ header {
   font-size: 40px;
 }
 
-.main-program-content {
-  display: inline-block;
-  position: relative;
-  width: 17%;
-  height: 20vh;
-  text-align: center;
-  padding-top: 20px;
-  margin-bottom: 150px;
-  margin-left: 5px;
+.main-program {
+  background-color: #272a31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
-.main-program-content::before {
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-size: 100%;
+  margin: 20px;
+  width: 90%;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+}
+
+.card::before {
   content: "";
   background: white;
   background-size: cover;
@@ -145,26 +143,28 @@ header {
   bottom: 0;
   left: 0;
   opacity: 0.2;
-  height: 35vh;
+  margin: 2px;
+  width: auto;
 }
 
-.main-program-content p,
-a {
-  font-family: "Lato", sans-serif;
-  position: relative;
-  color: #fff;
-  margin: 10px 0;
+.card-body {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.main-program-content h3 {
-  font-family: "Lato", sans-serif;
-  position: relative;
-  color: #ec5242;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 40px;
+.card-body p {
+  font-size: 12px;
+}
+
+.card-container h3 {
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
+  color: #ec5242;
 }
 
 .btn {
@@ -177,18 +177,24 @@ a {
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 50px;
+  color: white;
 }
 
 .speakers-content {
   display: none;
+  visibility: hidden;
+  width: 0%;
+  height: 0vh;
+  overflow: hidden;
 }
 
 .speakers-content-desktop {
   display: grid;
+  grid-column: center;
   grid-template-columns: 2fr 2fr;
-  padding: 10px;
-  margin: 0 10%;
+  padding: 0 22%;
   width: 100%;
+  justify-content: center;
 }
 
 .speakers-content-desktop p {
@@ -246,7 +252,6 @@ a {
 
 .sponsored i {
   color: #d3d3d3;
-  padding: 50px;
 }
 
 .sponsored h3 {
@@ -257,7 +262,9 @@ a {
 
 .sponsored-icon {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
 
 .footer {
@@ -265,7 +272,6 @@ a {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  height: 15vh;
   background-color: #d3d3d3;
 }
 
@@ -339,36 +345,45 @@ a {
   margin-bottom: 3%;
 }
 
-.event-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.event {
+  text-align: center;
 }
 
 .event-shade {
   position: relative;
-  background-color: #ec5242;
-  margin: 10px;
-  height: 30vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  margin-bottom: 20px;
+  height: 20vh;
 }
 
-.event-img {
-  width: 350px;
-  opacity: 0.2;
-  height: 30vh;
+.event-shade::before {
+  content: "";
+  background: red;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.event-img1 {
+  background-image: url('images/event1.jpg');
+}
+
+.event-img2 {
+  background-image: url('images/event2.jpg');
 }
 
 .event-date {
-  position: relative;
-  z-index: 999;
   text-align: center;
-  top: -200px;
-  width: 100%;
   color: white;
-}
-
-.event-date h3 {
-  font-weight: 700;
+  z-index: 99;
+  padding: 3%;
 }
 
 .about-footer {
@@ -390,8 +405,8 @@ a {
     border: none;
     background: none;
     cursor: pointer;
-    width: 94%;
     text-align: left;
+    margin-left: 20px;
   }
 
   .closeIcon {
@@ -410,9 +425,9 @@ a {
     background: white;
     opacity: 0.9;
     list-style: none;
-    padding: 65px;
     margin: 0;
     display: block;
+    padding-top: 50px;
   }
 
   .menuItem {
@@ -420,7 +435,6 @@ a {
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-    margin: 20px;
   }
 
   .showMenu {
@@ -439,51 +453,41 @@ a {
     display: none;
   }
 
-  .intro-div {
-    margin-top: -20px;
-    width: 80%;
-  }
-
   .intro-head {
     margin-top: 10%;
   }
 
   .intro-time h2 {
-    font-size: 27px;
+    font-size: 20px;
   }
 
   .fab {
-    font-size: 60px;
+    font-size: 30px;
   }
 
-  .main-program-content {
-    position: relative;
-    width: 100%;
+  .card-container {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .main-program-content::before {
-    content: "";
-    height: 20vh;
-    margin-left: -30px;
-    left: 45px;
-    margin-right: 10px;
+  .card::before {
+    margin: 2px 10px;
   }
 
-  .main-program-content h3 {
-    margin-left: -20%;
-    font-weight: 700;
-    font-size: 18px;
+  .card-body {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 20px;
   }
 
-  .main-program-content p,
-  a {
-    padding: 0;
-    margin-left: -30px;
-    margin-right: 20px;
-    width: 100%;
+  .card-body p {
+    margin-bottom: -5px;
   }
 
   .btn {
@@ -509,8 +513,13 @@ a {
     display: none;
   }
 
+  .speakers-content{
+    visibility: inherit;
+    width: 100%;
+    height: auto;
+  }
+
   .speakers-info {
-    margin-left: 50px;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -521,6 +530,9 @@ a {
     margin-top: 50px;
   }
 
+  .speakers-content-mobile {
+    margin-left: 20px;
+  }
   .speakers-content-mobile p {
     font-family: "Lato", sans-serif;
     width: 150px;
@@ -549,13 +561,12 @@ a {
 
   .speakers-content-mobile img {
     width: 150px;
-    height: 25vh;
     margin-right: 4%;
     margin-left: 4%;
     border: 2px solid #ec5242;
   }
 
-  .btn-mobile {
+  .btn-mobile, .btn-mobile1 {
     width: 75%;
     margin-left: 70px;
     color: black;
@@ -585,7 +596,8 @@ a {
   }
 
   .sponsored i {
-    padding: 20px;
+    padding: 0;
+    cursor: pointer;
   }
 
   .event {
@@ -598,28 +610,12 @@ a {
 
   .event-shade {
     position: relative;
-    background-color: #ec5242;
-    margin: 10px;
-    height: 50vh;
-  }
-
-  .event-img {
-    width: 350px;
-    opacity: 0.2;
-    height: 50vh;
-  }
-
-  .event-date {
-    position: relative;
-    z-index: 999;
-    text-align: center;
-    top: -300px;
-    width: 100%;
-    color: white;
-  }
-
-  .footer {
-    padding-left: 100px;
+    display: flex;
+    margin-bottom: 20px;
     height: 20vh;
+  }
+
+  .footer p {
+    width: 250px;
   }
 }

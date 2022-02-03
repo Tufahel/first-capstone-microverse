@@ -67,6 +67,7 @@ const speakers = [
 ];
 
 const Btn = document.getElementsByClassName('btn-mobile');
+const Btn1 = document.getElementsByClassName('btn-mobile1');
 const featuredSpeaker = document.querySelector('.featured-speaker');
 const speakerSection = document.createElement('div');
 speakerSection.classList.add('speakers-content');
@@ -99,7 +100,7 @@ function speakerSectionMobile(number) {
                 </div>
                 </div>
                 <div class="btn-mobile">
-                <p>Get my resume</p>
+                <p>See more</p>
                 <a><i class="far fa-chevron-down"></i></a>
                 </div>
                 </div>
@@ -107,8 +108,8 @@ function speakerSectionMobile(number) {
   document.addEventListener('click', () => {
   });
 }
-
 speakerSectionMobile(0);
+
 
 function speakerSectionMobileClick(number) {
   speakerSection.style.display = 'block';
@@ -174,12 +175,21 @@ function speakerSectionMobileClick(number) {
                 </div>
                 </div>
                 </div>
+                <div class="btn-mobile btn-mobile1">
+                <p>See Less</p>
+                <a><i class="far fa-chevron-up"></i></a>
+                </div>
                 </div>
 `;
+document.addEventListener('click', () => {
+});
 }
 
 Btn[0].addEventListener('click', () => {
   speakerSectionMobileClick(0);
+  Btn1[0].addEventListener('click', () => {
+    speakerSectionMobile(0);
+  });
 });
 
 const speakerSectionDesktop = document.createElement('div');
@@ -250,6 +260,6 @@ function speakerSectionGlobal(number) {
                 </div>
                 </div>
 `;
-}
 
+}
 speakerSectionGlobal(0);
