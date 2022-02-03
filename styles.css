@@ -169,6 +169,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .card-container {
@@ -228,7 +229,6 @@ nav {
   color: white;
   background-color: #ec5242;
   text-align: center;
-  visibility: inherit;
   margin-top: 20px;
   cursor: pointer;
 }
