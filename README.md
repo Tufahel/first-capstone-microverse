@@ -19,19 +19,21 @@ To get a local copy up and running follow these simple example steps.
 - Desktop Version
 
 - First page
-- ![](images/1.png)
+- ![](images/dsk1.png)
 
 - Second page
-- ![](images/2.png)
+- ![](images/dsk2.png)
 
 - Mobile Version
 
 - First page
-- ![](images/3-update.png)
+- ![](images/mb1.png)
 
 - Second page
-- ![](images/4.png)
+- ![](images/mb2.png)
 
+- Mobile Menu
+- ![](images/mb3.png)
 
 ## Built With
 
