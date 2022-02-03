@@ -292,10 +292,12 @@ nav {
 }
 
 .speakers-content-mobile img {
+  background-image: url('images/my-bg.png');
+  background-position: 10% 10%;
   width: 150px;
   margin-right: 4%;
   margin-left: 4%;
-  border: 2px solid #ec5242;
+  
 }
 
 .btn-mobile,
@@ -649,11 +651,11 @@ nav {
   }
 
   .speakers-content-desktop img {
-    width: 100px;
-    height: 10vh;
+    background-image: url('images/my-bg.png');
+    background-position: 12% 12%;
+    height: 20vh;
     margin-right: 5%;
     margin-left: 5%;
-    border: 2px solid #ec5242;
   }
 
   .speakers-info-desktop {
