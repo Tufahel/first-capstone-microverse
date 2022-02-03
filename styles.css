@@ -29,6 +29,10 @@ nav {
   padding-top: 20px;
 }
 
+.social-icons-div {
+  display: none;
+}
+
 .logo {
   display: none;
 }
@@ -500,7 +504,6 @@ nav {
     transform: none;
     transition: none;
     background: none;
-    margin-top: -35px;
     margin-left: 45%;
     display: block;
     display: flex;
@@ -513,7 +516,39 @@ nav {
     line-height: 44px;
   }
 
+  .social-icons-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #272a31;
+    list-style: none;
+    display: block;
+    padding-right: 10px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .social-icons i {
+    font-size: 20px;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+  }
+
   .logo {
+    margin-top: 4%;
     display: block;
     margin-left: 35px;
     font-size: 20px;
