@@ -42,9 +42,11 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
 .logo {
   margin-left: 35px;
 }
+
 .hamburger {
   visibility: hidden;
 }
@@ -68,17 +70,19 @@ header {
   font-size: 50px;
   width: 70%;
 }
+
 .intro-mid-border {
   border: 3px solid white;
-  color: black;
+  color: #272a31;
   padding: 10px;
   margin-top: 20px;
   width: 70%;
 }
 
 .intro-time p {
-  color: black;
-  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+  font-size: 15px;
   padding-bottom: 5%;
 }
 
@@ -158,6 +162,7 @@ header {
 }
 
 .card-body p {
+  font-family: "Lato", sans-serif;
   font-size: 12px;
 }
 
@@ -184,7 +189,7 @@ header {
   display: none;
   visibility: hidden;
   width: 0%;
-  height: 0vh;
+  height: 0;
   overflow: hidden;
 }
 
@@ -276,6 +281,7 @@ header {
 }
 
 .footer p {
+  font-family: "Lato", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 350px;
@@ -312,7 +318,7 @@ header {
 
 .about-mid-border {
   border: 3px solid white;
-  color: black;
+  color: #272a31;
   padding: 20px;
   margin-top: 20px;
   background-color: #fff;
@@ -325,12 +331,14 @@ header {
 .about-email {
   font-weight: 700;
   text-decoration: underline;
+  font-family: "Lato", sans-serif;
 }
 
 .underline-content p {
   margin-top: 10px;
   width: 400px;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .details {
@@ -386,6 +394,16 @@ header {
   padding: 3%;
 }
 
+.event-date h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.event-date p {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
 .about-footer {
   margin-top: 20px;
   background-color: #272a31;
@@ -431,7 +449,7 @@ header {
   }
 
   .menuItem {
-    color: black;
+    color: #272a31;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
@@ -513,10 +531,12 @@ header {
     display: none;
   }
 
-  .speakers-content{
+  .speakers-content {
     visibility: inherit;
     width: 100%;
     height: auto;
+    display: block;
+    margin-top: 10px;
   }
 
   .speakers-info {
@@ -525,14 +545,10 @@ header {
     margin-bottom: 40px;
   }
 
-  .speakers-content {
-    display: block;
-    margin-top: 50px;
-  }
-
   .speakers-content-mobile {
     margin-left: 20px;
   }
+
   .speakers-content-mobile p {
     font-family: "Lato", sans-serif;
     width: 150px;
@@ -566,10 +582,11 @@ header {
     border: 2px solid #ec5242;
   }
 
-  .btn-mobile, .btn-mobile1 {
+  .btn-mobile,
+  .btn-mobile1 {
     width: 75%;
     margin-left: 70px;
-    color: black;
+    color: #272a31;
     text-align: center;
     border: 2px solid rgb(194, 193, 193);
     display: flex;

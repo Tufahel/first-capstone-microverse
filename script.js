@@ -110,7 +110,6 @@ function speakerSectionMobile(number) {
 }
 speakerSectionMobile(0);
 
-
 function speakerSectionMobileClick(number) {
   speakerSection.style.display = 'block';
   featuredSpeaker.appendChild(speakerSection);
@@ -181,8 +180,8 @@ function speakerSectionMobileClick(number) {
                 </div>
                 </div>
 `;
-document.addEventListener('click', () => {
-});
+  document.addEventListener('click', () => {
+  });
 }
 
 Btn[0].addEventListener('click', () => {
@@ -260,6 +259,5 @@ function speakerSectionGlobal(number) {
                 </div>
                 </div>
 `;
-
 }
 speakerSectionGlobal(0);
