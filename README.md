@@ -15,25 +15,11 @@ To get a local copy up and running follow these simple example steps.
 - Extract this git copy.
 - Open index.html file with google chrome.
 
-# Pic
-- Desktop Version
+# GIF Visualization
+- Here is a details Gif visualization for better understanding.
 
-- First page
-- ![](images/dsk1.png)
+- ![](images/full-site.gif)
 
-- Second page
-- ![](images/dsk2.png)
-
-- Mobile Version
-
-- First page
-- ![](images/mb1.png)
-
-- Second page
-- ![](images/mb2.png)
-
-- Mobile Menu
-- ![](images/mb3.png)
 
 ## Built With
 
