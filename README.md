@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# First Capsotne project of Tufahel Ahmed
+# First Capstone project of Tufahel Ahmed
 
 This is the first capstone project of Tufahel Ahmed in Microverse. Tufahel Ahmed is coding scince 2017. He has coding experience on C,C++,Java,HTML,CSS,REACT and a little bit NodeJs. He has developed some websites for personal experience and use.
 
