@@ -508,7 +508,7 @@ nav {
     transition: none;
     background: none;
     display: inline-flex;
-    height: 16vh;
+    height: 90px;
     justify-content: space-around;
     left: -55px;
     background-color: white;

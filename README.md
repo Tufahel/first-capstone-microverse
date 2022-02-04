@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 # GIF Visualization
 - Here is a details Gif visualization for better understanding.
 
-- ![](images/full-site.gif)
+- ![](images/gif-update.gif)
 
 
 ## Built With
