@@ -101,6 +101,7 @@ nav {
 
 .intro-div {
   width: 93%;
+  margin-top: 20px;
 }
 
 .intro-head {
@@ -387,7 +388,7 @@ nav {
 
 .about-div {
   margin-left: 10%;
-  padding-top: 30px;
+  padding-top: 15%;
   padding-bottom: 100px;
   width: 80%;
   text-align: center;
@@ -423,6 +424,7 @@ nav {
   font-weight: 700;
   text-decoration: underline;
   font-family: "Lato", sans-serif;
+  cursor: pointer;
 }
 
 .underline-content p {
@@ -501,14 +503,17 @@ nav {
 
 @media only screen and (min-width: 768px) {
   .menu {
-    position: absolute;
+    position: fixed;
     transform: none;
     transition: none;
     background: none;
-    margin-left: 45%;
-    display: block;
-    display: flex;
+    display: inline-flex;
+    height: 16vh;
     justify-content: space-around;
+    left: -55px;
+    background-color: white;
+    opacity: 0.5;
+    border-bottom: 2px solid white;
   }
 
   .menuItem {
@@ -522,7 +527,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
     background-color: #272a31;
     list-style: none;
     display: block;
@@ -546,13 +551,16 @@ nav {
   .social-icons a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
   }
 
   .logo {
-    margin-top: 4%;
-    display: block;
-    margin-left: 35px;
+    padding-right: 200px;
+    padding-top: 5px;
     font-size: 20px;
+    height: 20vh;
+    color: black;
+    display: block;
   }
 
   .hamburger {

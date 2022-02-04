@@ -105,8 +105,6 @@ function speakerSectionMobile(number) {
                 </div>
                 </div>
 `;
-  document.addEventListener('click', () => {
-  });
 }
 speakerSectionMobile(0);
 
@@ -180,8 +178,6 @@ function speakerSectionMobileClick(number) {
                 </div>
                 </div>
 `;
-  document.addEventListener('click', () => {
-  });
 }
 
 Btn[0].addEventListener('click', () => {
