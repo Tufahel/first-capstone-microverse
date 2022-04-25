@@ -2,7 +2,7 @@
 
 # First Capstone project of Tufahel Ahmed
 
-This is the first capstone project of Tufahel Ahmed in Microverse. Tufahel Ahmed is coding scince 2017. He has coding experience on C,C++,Java,HTML,CSS,REACT and a little bit NodeJs. He has developed some websites for personal experience and use.
+This capstone project website is for an online school named “Twelve Mint School”. In this web app, we can see the school curriculum, teachers' profiles, schools achievement, and history.
 
 # Live Page Link
 

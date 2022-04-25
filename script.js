@@ -179,12 +179,25 @@ function speakerSectionMobileClick(number) {
                 </div>
 `;
 }
+/* eslint-disable no-use-before-define */
 
-Btn[0].addEventListener('click', () => {
+function btn1() {
+  speakerSectionMobile(0);
+  Btn[0].addEventListener('click', () => {
+    btn();
+  });
+}
+
+function btn() {
   speakerSectionMobileClick(0);
   Btn1[0].addEventListener('click', () => {
     speakerSectionMobile(0);
+    btn1();
   });
+}
+
+Btn[0].addEventListener('click', () => {
+  btn();
 });
 
 const speakerSectionDesktop = document.createElement('div');
